@@ -3,68 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morsal Hakim - Resume</title>
+    <title>My Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Morsal Hakim</h1>
-            <ul id="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="menu-toggle">☰</button>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Morsal Hakim, a Software Engineering student at ALU with a passion for web development and innovation.</p>
+    <!-- Background Section -->
+    <section class="background">
+        <img src="images/Backround.jpg" alt="Background Image" class="background-img">
     </section>
 
-    <section id="skills">
+    <!-- Navbar Section -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+        <h1>Your Name</h1>
+        <p>Short Bio:</p>
+        <p>Hi, I am Morsal Hakim, a passionate software engineer with a strong interest in using technology to drive social change. I am committed to empowering others, particularly women and girls in Afghanistan, to access education and career opportunities in tech. My goal is to use my skills in coding and problem-solving to contribute to building sustainable systems that foster innovation, enhance infrastructure, and create jobs.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <h2>Skills</h2>
         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python & Java</li>
-            <li>Git & GitHub</li>
-            <li>Linux & Shell Scripting</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
         </ul>
+        <img src="images/skills.jpg" alt="Skills Image" class="skills-img">
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>Details about internships or past projects.</p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p>BSE, African Leadership University</p>
-    </section>
-
-    <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <h2>Projects</h2>
-        <p>Details about your projects like Inviro Track.</p>
+        <p>Project 1: resume-website A personal resume website built with HTML and CSS.</p>
+        <p>Project 2: alu_regex-data-extraction-Hakim-morsal2244 A Python project for data extraction using regular expressions.</p>
+        <p>Project 3: alu-back-end A Python backend project for server-side functionality and API creation.</p>
+        <img src="images/projects.jpg" alt="Projects Image" class="projects-img">
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form action="mailto:m.hakim@alustudent.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
 
-    <footer>
-        <p>© 2025 Morsal Hakim</p>
-    </footer>
+<script src="script.js"></script>
 </body>
 </html>
