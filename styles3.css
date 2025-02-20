@@ -1,0 +1,294 @@
+
+/* Skills page */
+
+.Skills{
+    background-color: rgb(255, 255, 255);
+    font-family: 'K2D', sans-serif;
+}
+
+.Skills p{
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.Skills .super_container2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 1px);
+    height: 100%;
+    padding: 350px 150px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.Skills .super_container2  ul{
+    display: none;
+}
+
+.Skills .super_container2  .Frontend_development{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Skills .super_container2 .Frontend_development:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+.Skills .super_container2  .Backend_development{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Skills .super_container2  .Backend_development:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+/*wrapper 2*/
+
+.Skills .super_container2 ul{
+    display: none;
+}
+
+.Skills .super_container2 .databases_skills {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Skills .super_container2 .databases_skills:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+.Skills .super_container2 .tools {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Skills .super_container2 .tools:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+
+.Projects .super_container .wrapper1 .Frontend_development{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+.Skills .super_container2  ul li{
+    font-family: 'Jura';
+    position: relative;
+    list-style: none;
+    font-size: 1.0em;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    border: 2px solid rgb(167, 164, 164);
+    color: rgb(167, 164, 164);
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 5px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.Skills .super_container2 ul li:hover{
+    background-color: white;
+    padding: 15px;
+    color: black;
+    box-shadow: white 0px 0px 10px;
+    border: 2px solid rgb(227, 227, 227);
+}
+
+.Skills .super_container2 .Frontend_development:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+
+.Skills .super_container2 ul{
+    display: none;
+}
+
+.Skills .super_container2  .Database_Engineering {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Skills .super_container2  .Database_Engineering:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+/*=======responsiveness*/
+
+@media (max-width: 600px) and (min-width: 480px){
+    .Skills .super_container2{
+        flex-direction: column;
+        padding: 350px 50px;
+        width: 100%;
+    }
+    .Skills p{
+        font-size: 1.0em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Skills .super_container2 ul{
+        font-size: 0.8em;
+        padding: 1px 1px;
+    }
+    
+}
+
+
+@media (max-width: 479px){
+    .Skills .super_container2{
+        flex-direction: column;
+        padding: 350px 50px;
+        width: 100%;
+    }
+    .Skills p{
+        font-size: 0.5em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Skills .super_container2 ul{
+        font-size: 0.3em;
+        padding: 1px 1px;
+    }
+    
+}
+
+/*laptops*/
+@media (max-width: 1253px) and (min-width: 881px){
+    .Skills .super_container2{
+        flex-direction: row;
+        padding: 350px 50px;
+        width: 100%;
+    }
+    .Skills p{
+        font-size: 0.8em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Skills .super_container2 ul{
+        font-size: 0.6em;
+        padding: 1px 1px;
+    }
+}
+
+@media(max-width: 880px) and (min-width: 780px){
+    .Skills .super_container2{
+        flex-direction: row;
+        padding: 350px 50px;
+        width: 100%;
+    }
+    .Skills p{
+        font-size: 0.6em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Skills .super_container2 ul{
+        font-size: 0.4em;
+        padding: 1px 1px;
+    }
+}
+
+@media(max-width: 780px) and (min-width: 690px){
+    .Skills .super_container2{
+        flex-direction: row;
+        padding: 350px 50px;
+        width: 100%;
+    }
+    .Skills p{
+        font-size: 0.5em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Skills .super_container2 ul{
+        font-size: 0.2em;
+        padding: 1px 1px;
+    }
+}
+@media(max-width: 690px) and (min-width: 600px){
+    .Skills .super_container2{
+        flex-direction: row;
+        padding: 350px 20px;
+        width: 100%;
+    }
+    .Skills p{
+        font-size: 0.5em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Skills .super_container2 ul{
+        font-size: 0.2em;
+        padding: 1px 1px;
+    }
+}
