@@ -1,0 +1,417 @@
+/* projects page */
+
+.Projects{
+    background-color: #f9f9f9;
+    font-family: 'K2D', sans-serif;
+}
+
+.Projects p{
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Projects .super_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 1px);
+    height: 100%;
+    padding: 150px 150px;
+    gap: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+
+/* wrapper1*/
+/*websites development*/
+.Projects .super_container .wrapper1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    gap: 20px;
+}
+
+
+.Projects .super_container .wrapper1 ul{
+    display: none;
+}
+
+
+.Projects .super_container .wrapper1 .Website_development{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+.Projects .super_container .wrapper1  ul li{
+    font-family: 'Jura';
+    position: relative;
+    list-style: none;
+    font-size: 0.9em;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    border: 2px solid rgb(167, 164, 164);
+    color: rgb(167, 164, 164);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s ease;
+    gap: 0;
+}
+
+.Projects .super_container .wrapper1 ul li:hover{
+    background-color: white;
+    padding: 15px;
+    color: black;
+    box-shadow: white 0px 0px 10px;
+    border: 2px solid rgb(227, 227, 227);
+}
+
+.Projects .super_container .wrapper1 .Website_development:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* mobile development */
+
+.Projects .super_container .wrapper1 .mobile_development{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Projects .super_container .wrapper1 .mobile_development:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+/*wrapper 2*/
+
+.Projects .super_container .wrapper2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    gap: 20px;
+}
+
+
+
+.Projects .super_container .wrapper2 ul{
+    display: none;
+}
+
+
+.Projects .super_container .wrapper2 .system_engineering {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Projects .super_container .wrapper2 .system_engineering:hover{
+    flex: 3;
+    background-color: black;
+    color: white;
+}
+
+.Projects .super_container .wrapper2 .algorithms {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Projects .super_container .wrapper2 .algorithms:hover{
+    flex: 4;
+    background-color: black;
+    color: white;
+}
+
+
+.Projects .super_container .wrapper2  ul li{
+    font-family: 'Jura';
+    position: relative;
+    list-style: none;
+    font-size: 0.9em;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    border: 2px solid rgb(167, 164, 164);
+    color: rgb(167, 164, 164);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s ease;
+    gap: 0;
+}
+
+
+
+.Projects .super_container .wrapper2 ul li:hover{
+    background-color: white;
+    padding: 15px;
+    color: black;
+    box-shadow: white 0px 0px 10px;
+    border: 2px solid rgb(227, 227, 227);
+}
+
+.Projects .super_container .wrapper2 .system_engineering:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+/*wrapper 3*/
+.Projects .super_container .wrapper3{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    gap: 20px;
+}
+
+
+
+.Projects .super_container .wrapper3 ul{
+    display: none;
+}
+
+.Projects .super_container .wrapper3 .Database_Engineering {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Projects .super_container .wrapper3 .Database_Engineering:hover{
+    flex: 4;
+    background-color: black;
+    color: white;
+}
+
+.Projects .super_container .wrapper3 .low_level_programing{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.Projects .super_container .wrapper3 .low_level_programing:hover{
+    flex: 3;
+    background-color: black;
+    color: white;
+}
+
+
+.Projects .super_container .wrapper3  ul li{
+    font-family: 'Jura';
+    position: relative;
+    list-style: none;
+    font-size: 0.9em;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    border: 2px solid rgb(167, 164, 164);
+    color: rgb(167, 164, 164);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s ease;
+    gap: 0;
+}
+
+.Projects .super_container .wrapper3 ul li:hover{
+    background-color: white;
+    padding: 15px;
+    color: black;
+    box-shadow: white 0px 0px 10px;
+    border: 2px solid rgb(227, 227, 227);
+}
+
+.Projects .super_container .wrapper3 .Database_Engineering:hover{
+    flex: 2;
+    background-color: black;
+    color: white;
+}
+
+
+/*responsiveness*/
+/*phone*/
+@media (max-width: 600px) and (min-width: 480px){
+    .Projects .super_container{
+        flex-direction: column;
+        padding: 50px 50px;
+        width: 100%;
+    }
+    .Projects p{
+        font-size: 1.0em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Projects .super_container ul{
+        font-size: 0.8em;
+        padding: 1px 1px;
+    }
+    
+}
+
+
+@media (max-width: 479px){
+    .Projects .super_container{
+        flex-direction: column;
+        padding: 50px 50px;
+        width: 100%;
+    }
+    .Projects p{
+        font-size: 0.5em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Projects .super_container ul{
+        font-size: 0.3em;
+        padding: 1px 1px;
+    }
+    
+}
+
+/*laptops*/
+@media (max-width: 1253px) and (min-width: 881px){
+    .Projects .super_container{
+        flex-direction: row;
+        padding: 50px 50px;
+        width: 100%;
+    }
+    .Projects p{
+        font-size: 0.8em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Projects .super_container ul{
+        font-size: 0.6em;
+        padding: 1px 1px;
+    }
+}
+
+@media(max-width: 880px) and (min-width: 780px){
+    .Projects .super_container{
+        flex-direction: row;
+        padding: 30px 30px;
+        width: 100%;
+    }
+    .Projects p{
+        font-size: 0.6em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Projects .super_container ul{
+        font-size: 0.4em;
+        padding: 1px 1px;
+    }
+}
+
+@media(max-width: 780px) and (min-width: 690px){
+    .Projects .super_container{
+        flex-direction: row;
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .Projects p{
+        font-size: 0.5em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Projects .super_container ul{
+        font-size: 0.2em;
+        padding: 1px 1px;
+    }
+}
+@media(max-width: 690px) and (min-width: 600px){
+    .Projects .super_container{
+        flex-direction: row;
+        padding: 10px 10px;
+        width: 100%;
+    }
+    .Projects p{
+        font-size: 0.3em;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .Projects .super_container ul{
+        font-size: 0.1em;
+        padding: 1px 1px;
+    }
+}
