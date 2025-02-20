@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Jura', sans-serif;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+/*==================================WELCOME PAGE INIT=========================================*/
+
+/* Navigation Bar */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Hidden_page nav ul .hidden1{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight:900;
+}
+
+.Hidden_page nav ul .non_hidden1{
+    color: rgb(186, 186, 186);
+}
+
+.Hidden_page nav ul{
+    position: fixed;
+    top: 2%;
+    right: 0;
+    color: rgb(255, 255, 255);
+    margin-right: 30px;
+    font-size: 19px;
+}
+
+.no_break{
+    white-space: nowrap;
+}
+
+.Hidden_page nav ul .hidden {
+    color: rgb(255, 255, 255)
+}
+
+/*mobile phone screen*/
+@media (max-width: 500px){
+
+    .Hidden_page nav ul .hidden1{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight:900;
+    }
+
+    .Hidden_page nav ul .non_hidden1{
+        color: rgb(186, 186, 186);
+        font-size: 15px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+/* Tablette phone screen */
+@media (max-width: 768px) and (min-width: 501px){
+    .Welcome_page nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+/*footer - links*/
+
+.Hidden_page .contact-links ul {
+    position: fixed;
+    left: 0;
+    bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    pointer-events: none;
+}
+
+.Hidden_page .contact-links ul li a {
+    pointer-events: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.Hidden_page .contact-links ul li img{
+    width: 20px;
+    height: 20px;
+    transition: all 0.1s ease-in;
+}
+
+.Hidden_page .contact-links ul li img:hover{
+    width: 30px;
+    height: 30px;
+}
+
+/* main */
+
+.Hidden_page main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: -2;
+}
+
+.Hidden_page main .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: -2;
+    color: white;
+}
+
+.Hidden_page main .intro .Welcome_text{
+    top: 15%;
+    left: 5%;
+    font-size: 100px;
+    position: absolute;
+    font-family: 'McLaren';
+    transition: all 0.3s ease-in;
+}
+
+/*responsiveness of the welcome text*/
+@media screen and (max-width: 768px){
+    .Hidden_page main .intro .Welcome_text{
+        font-size: 50px;
+    }
+}
+
+.Hidden_page main .intro .intro_text{
+    top: 50%;
+    left: 15%;
+    font-size: 30px;
+    width: 75%;
+    position: absolute;
+    font-family: 'Maven Pro';
+    transition: all 0.3s ease-in;
+}
+
+/*responsiveness of the intro text*/
+
+@media screen and (max-width: 858px) and (min-width: 769px){
+    .Hidden_page main .intro .intro_text{
+        font-size: 25px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width:604px){
+    .Hidden_page main .intro .intro_text{
+        font-size: 20px;
+        margin: 20px auto;
+    }
+}
+
+@media(max-width: 604px){
+    .Hidden_page main .intro .intro_text{
+        font-size: 15px;
+        margin: 20px auto;
+    }
+}
+
+
+/*main Bubble*/
+
+.Hidden_page  main .Bonaparte_text h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 15px;
+    left: 1%;
+}
+
+/*responsiveness*/
+@media screen and (max-width: 768px){
+    .Hidden_page  main .Bonaparte_text h1 {
+        font-size: 16px;
+    }
+}
+
+
+/*reveal button*/
+.unreveal1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    padding: 20px;
+    bottom: 7%;
+    background-color: #ffffff;
+    background-image: url('./images/dark_mode/Open_eye.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 3;
+    transition: all 0.2s ease-in;
+}
+
+.unreveal1:hover {
+    padding: 30px;
+    cursor: pointer;
+}
+
+.unreveal1 .text1 button{
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    background-color: transparent;
+    border: transparent;
+}
+
+
+.text1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 10s linear infinite;
+}
+
+
+@keyframes unrevealAnimation {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: white;
+    }
+}
+
+.unreveal-animation {
+    animation: revealAnimation 1s forwards;
+}
+
+
+.text1 .span1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    transform-origin: 0 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/*============================RESPONSIVENESS=================================================*/
+
+
+#mainContainer {
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.section {
+    min-height: 100%;
+}
+
+.Welcome_page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Welcome_page main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.Hidden_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.Welcome_page nav ul,
+.Welcome_page .contact-links ul {
+    position: fixed;
+}
+
+#welcomePage, #aboutPage {
+    z-index: 1;
+}
+
+#welcomePage.active, #aboutPage.active {
+    z-index: 2;
+}
+
+.unreveal1 {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
