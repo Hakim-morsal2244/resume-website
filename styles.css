@@ -1,186 +1,598 @@
-/* Global Styles */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    line-height: 1.6;
-    background-color: #f0f2f5;
-    color: #333;
-    text-align: center;
-}
-
-/* Header and Navigation */
-header {
-    background: linear-gradient(135deg, #007BFF, #0056b3);
-    color: white;
-    padding: 1rem 2rem;
-    text-align: center;
-    position: fixed;
+body{
+    font-family: 'Jura', sans-serif;
+    min-height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
 }
 
-nav {
+/*==================================WELCOME PAGE INIT=========================================*/
+
+/* Navigation Bar */
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    z-index: 5;
+}
+
+.Welcome_page nav ul .non_hidden {
+    transition: all 0.1s ease-in;
+}
+
+nav ul li a {
+    transition: all 0.1s ease-in;
+}
+
+.Welcome_page nav ul .non_hidden:hover, 
+.Welcome_page nav ul .non_hidden a.active {
+    color: #121212;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.Welcome_page nav ul {
+    position: fixed;
+    right: 0;
+    top: 2%;
+    color: black;
+    font-size: 19px;
+}
+
+.Welcome_page nav ul .hidden {
+    color: rgb(186, 186, 186);
+}
+
+/*mobile phone screen*/
+@media (max-width: 500px){
+    .Welcome_page nav ul{
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        background: linear-gradient(150deg, rgba(157, 157, 157, 0.334),  rgba(255, 255, 255, 0.499) 150px, rgba(0, 0, 0, 0.334));
+        padding: 10px;
+        border-radius: 0px;
+    }
+
+    .Welcome_page nav ul li{
+        color: #121212;
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .Welcome_page nav ul .non_hidden a.active{
+        color: #121212;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Tablette phone screen */
+@media (max-width: 768px) and (min-width: 501px){
+    .Welcome_page nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 16px;
+    }
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #646464;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+
+/*footer - links*/
+
+.Welcome_page .contact-links ul {
+    position: fixed;
+    left: 0;
+    bottom: 10%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    pointer-events: none;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    color: white;
+.Welcome_page .contact-links ul li a {
+    pointer-events: auto;
     cursor: pointer;
 }
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    transition: all 0.3s ease-in-out;
+.Welcome_page .contact-links ul li img{
+    width: 20px;
+    height: 20px;
+    transition: all 0.1s ease-in;
 }
 
-.nav-links li {
-    margin: 0 1.2rem;
+.Welcome_page .contact-links ul li img:hover{
+    width: 30px;
+    height: 30px;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-}
+/* main */
 
-.nav-links a:hover {
-    color: #ffcc00;
-}
-
-/* Sections */
-section {
-    padding: 6rem 2rem;
-    max-width: 1100px;
-    margin: 100px auto;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #333;
-}
-
-/* Stylish Buttons */
-button {
-    background: linear-gradient(135deg, #007BFF, #0056b3);
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-}
-
-button:hover {
-    background: linear-gradient(135deg, #0056b3, #003d80);
-    transform: scale(1.05);
-}
-
-/* Project Section */
-.project {
-    background: white;
-    padding: 2rem;
-    margin: 1.5rem 0;
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-}
-
-/* Contact Form */
-#contact-form {
+.Welcome_page main {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     margin: auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: -2;
 }
 
-#contact-form input, 
-#contact-form textarea {
-    margin: 0.8rem 0;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+
+/*main Bubble*/
+
+.Welcome_page main .Bonaparte_text .main_bubble {
+    background: linear-gradient(150deg, white 150px, rgb(192, 191, 191));
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+
+
+.Welcome_page  main .Bonaparte_text h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 90px;
+    color: #121212;
+    position: relative;
+    z-index: -2;
+}
+
+
+/* mobile responsivenes */
+@media (max-width: 480px){
+    .Welcome_page main .Bonaparte_text h1 {
+        transition: all 0.3s ease-in-out;
+        font-size: 30px;
+    }
+    .Welcome_page main .Bonaparte_text .main_bubble{
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(150deg, white 40px, rgb(192, 191, 191));
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/*tablette responsiveness*/
+@media (min-width: 481px) and (max-width: 768px){
+    .Welcome_page main .Bonaparte_text h1 {
+        transition: all 0.3s ease-in-out;
+        font-size: 50px;
+    }
+    .Welcome_page main .Bonaparte_text .main_bubble{
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(150deg, white 100px, rgb(192, 191, 191));
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media(min-width: 768px){
+    .Welcome_page main .Bonaparte_text h1 {
+        transition: all 0.3s ease-in-out;
+        font-size: 70px;
+    }
+
+    .Welcome_page main .Bonaparte_text .main_bubble{
+        width: 350px;
+        height: 350px;
+        background: linear-gradient(150deg, white 150px, rgb(192, 191, 191));
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/*reveal button*/
+.reveal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    padding: 20px;
+    bottom: 10%;
+    background-color: #000000;
+    background-image: url('./images/Open_eye.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 3;
+    transition: all 0.2s ease-in;
+}
+
+.reveal:hover {
+    padding: 30px;
+    cursor: pointer;
+}
+
+.reveal .text button{
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    background-color: transparent;
+    border: transparent;
+}
+
+
+.text {
     width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 10s linear infinite;
 }
 
-#contact-form input:focus, 
-#contact-form textarea:focus {
-    border-color: #007BFF;
-    outline: none;
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
+@keyframes revealAnimation {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: black;
+    }
+}
+
+
+.reveal-animation {
+    animation: revealAnimation 1s forwards;
+}
+
+
+
+.text span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    transform-origin: 0 0;
+    font-size: 16px;
+}
+
+/*responsiveness reveal button*/
+@media(max-width: 768px){
+    .reveal {
+        width: 5px;
+        height: 5px;
+        padding: 20px;
+        bottom: 2%;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #007BFF;
+    .reveal .text button{
         position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 1rem 0;
-        border-radius: 0 0 12px 12px;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
     }
 
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 1rem 0;
+    .text span {
+        font-size: 10px;
     }
 }
 
-/* Large Screens */
-@media (min-width: 1024px) {
-    section {
-        max-width: 900px;
-    }
+
+/* Bubbles*/
+.Welcome_page main .bubbles {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
+.Welcome_page  main .bubbles .Python {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    z-index: 1;
+}
+
+.Welcome_page  main .bubbles .Python img {
+    border: transparent;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(150deg, white 35px, rgb(192, 191, 191));
+    padding: 30px;
+}
+
+
+
+.Welcome_page  main .bubbles .Node {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    z-index: -1;
+}
+
+.Welcome_page  main .bubbles .Node img {
+    border: transparent;
+    background: linear-gradient(150deg, white 25px, rgb(192, 191, 191));
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+
+
+
+.Welcome_page  main .bubbles .C {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    z-index: -1;
+}
+
+.Welcome_page  main .bubbles .C img {
+    border: transparent;
+    background: linear-gradient(150deg, white 25px, rgb(192, 191, 191));
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+
+.Welcome_page  main .bubbles .html {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    z-index: -1;
+}
+
+.Welcome_page  main .bubbles .html img {
+    border: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(150deg, white 10px, rgb(192, 191, 191));
+    padding: 20px;
+}
+
+
+.Welcome_page  main .bubbles .bubble1{
+    position: absolute;
+    border: transparent;
+    border-radius: 50%;
+    background: linear-gradient(150deg, white 15px, rgb(192, 191, 191));
+    top: 80%;
+    left: 60%;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+}
+
+.Welcome_page  main .bubbles .bubble2{
+    position: absolute;
+    border: transparent;
+    border-radius: 50%;
+    background: linear-gradient(150deg, white 4px, rgb(192, 191, 191));
+    top: 20%;
+    left: 60%;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+}
+
+.Welcome_page  main .bubbles .bubble3{
+    position: absolute;
+    border: transparent;
+    border-radius: 50%;
+    background: linear-gradient(150deg, white 25px, rgb(192, 191, 191));
+    top: 70%;
+    right: 60%;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+.Welcome_page  main .bubbles .bubble4{
+    position: absolute;
+    border: transparent;
+    border-radius: 50%;
+    background: linear-gradient(150deg, white 15px, rgb(192, 191, 191));
+    top: 20%;
+    right: 6%;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+}
+
+.Welcome_page  main .bubbles .bubble5{
+    position: absolute;
+    border: transparent;
+    border-radius: 50%;
+    background: linear-gradient(150deg, white 15px, rgb(192, 191, 191));
+    top: 39%;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+}
+
+/*Responsiveness*/
+
+.Welcome_page main .bubbles {
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*Tablette*/
+@media(max-width: 768px) and (min-width: 481px){
+
+
+    .Welcome_page main .bubbles .Python img {
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .Node img {
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .C img {
+        width: 15px;
+        height: 15px;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .html img {
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble1{
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble2{
+        width: 10px;
+        height: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble3{
+        width: 50px;
+        height: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble4{
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble5{
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+/*mobile phones*/
+@media (max-width: 480px){
+
+    .Welcome_page main .bubbles .Python img {
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .Node img {
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .C img {
+        width: 15px;
+        height: 15px;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .html img {
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble1{
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble2{
+        width: 10px;
+        height: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble3{
+        width: 50px;
+        height: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble4{
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Welcome_page main .bubbles .bubble5{
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+}
 
 
