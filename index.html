@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Morsal Hakim's Resume</title>
+    <title>My Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <header>
-        <div class="container">
-            <h1>Morsal Hakim</h1>
-            <p>Software Engineer | Tech Advocate | Problem Solver</p>
-        </div>
+        <nav>
+            <div class="logo">My Resume</div>
+            <button class="menu-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Profile Section -->
-    <section id="profile" class="profile">
-        <img src="images/profile.JPG" alt="Profile Image" class="profile-img">
-        <h2>Hi, I am Morsal Hakim, a passionate software engineer.</h2>
-        <p>I am committed to empowering others, particularly women and girls in Afghanistan, to access education and career opportunities in tech.</p>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! I'm [Morsal Hakim], a passionate web developer with skills in HTML, CSS, and JavaScript.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <p>Project 1: resume-website - A personal resume website built with HTML and CSS.</p>
-        <p>Project 2: alu_regex-data-extraction-Hakim-morsal2244 - A Python project for data extraction using regular expressions.</p>
-        <p>Project 3: alu-back-end - A Python backend project for server-side functionality and API creation.</p>
-        <img src="images/projects.jpg" alt="Projects Image" class="projects-img">
+    <section id="education">
+        <h1>Education</h1>
+        <p>Bachelor of Science in Software Engineering at Afrcian Leadership University</p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <img src="images/skills.png" alt="Skills Image" class="skills-img">
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+            <h2>Portfolio Website</h2>
+            <p>A personal website showcasing my work.</p>
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <form action="mailto:m.hakim@alustudent.com" method="POST" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
 
     <script src="script.js"></script>
-</body>
 
+</body>
 </html>
